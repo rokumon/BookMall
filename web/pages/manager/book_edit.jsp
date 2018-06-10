@@ -1,9 +1,9 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>编辑图书</title>
-<link type="text/css" rel="stylesheet" href="../../static/css/style.css" >
+	<%@ include file="/pages/common/header.jsp" %>
 <style type="text/css">
 	h1 {
 		text-align: center;
@@ -20,15 +20,7 @@
 </style>
 </head>
 <body>
-		<div id="header">
-			<img class="logo_img" alt="" src="../../static/img/logo.gif" >
-			<span class="wel_word">编辑图书</span>
-			<div>
-				<a href="book_manager.jsp">图书管理</a>
-				<a href="order_manager.html">订单管理</a>
-				<a href="../../index.html">返回商城</a>
-			</div>
-		</div>
+		<%@ include file="/pages/common/manager_menu.jsp" %>
 		
 		<div id="main">
 			<form action="book_manager.jsp">
@@ -54,11 +46,7 @@
 			
 	
 		</div>
-		
-		<div id="bottom">
-			<span>
-				尚硅谷书城.Copyright &copy;2015
-			</span>
-		</div>
+
+		<%@ include file="/pages/common/footer.jsp" %>
 </body>
 </html>
